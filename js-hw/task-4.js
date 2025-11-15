@@ -6,3 +6,8 @@
 */
 
 const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+    let number = numbers[i]
+    numbers[i] = number * 2;
+}

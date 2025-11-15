@@ -4,3 +4,11 @@
 */
 
 const word = "JavaScript";
+
+let reversedWord = ""
+
+for (let i = word.length - 1; i >= 0; i--) {
+    reversedWord = reversedWord + word.charAt(i);
+}
+
+console.log(reversedWord)
