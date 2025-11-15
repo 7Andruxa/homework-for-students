@@ -14,3 +14,10 @@ interface Product {
     price: number;
     description: string;
 }
+
+type ProductPreview = Pick<Product, "title" | "price">;
+
+type ProductWithoutDescription = Omit<Product, "description">;
+
+const preview: ProductPreview = { title: "Книга", price: 150 };
+const productItem: ProductWithoutDescription = { id: 1, title: "Книга", price: 150 };

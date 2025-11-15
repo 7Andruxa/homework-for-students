@@ -13,3 +13,10 @@ interface User {
     age: number;
     email: string;
 }
+
+type FullUser = Required<User>;
+
+type PartialUser = Partial<User>;
+
+const user1: FullUser = { name: "Andrii", age: 20, email: "andrii@gmail.com" };
+const user2: PartialUser = { name: "Guest" };

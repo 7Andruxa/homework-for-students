@@ -4,7 +4,13 @@
     Створи інтерфейс Car і типізуй цей масив.
 */
 
-const cars = [
+
+interface Car {
+    name: string;
+    price: number;
+}
+
+const cars: Car[] = [
     { name: "BMW", price: 85000 },
     { name: "Porsche", price: 130000 },
     { name: "Audi", price: 80000 },
